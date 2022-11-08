@@ -9,8 +9,100 @@ body {
     font-family: 'Fira Sans', sans-serif;
 }
 
+.wrapper {
+    max-width: 62.5rem;
+}
 
 h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2rem; 
+}
+
+h1, h2, h3, h4 {
+    color: white;
     font-family: 'Frank Ruhl Libre', serif;
-    color:red;
+    font-weight: 900;
+}
+
+.header {
+    max-height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.header__large {
+    background-color: #C7DDEA;
+    background-image: url("../images/family.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: bottom right 17px;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    padding: 3rem 6.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.header__large h1 {
+    color: black;
+    margin: 0;
+}
+.header__large p {
+    font-size: 0.87rem;
+    font-weight: 500;
+}
+
+.header span {
+    color: white;
+}
+
+.header__small {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__small h2, .header__small p {
+    margin: 1px;
+}
+
+.header__small p {
+    font-size: 0.68rem;
+    font-weight: 700;
+}
+
+.header__small--orange {
+    background-color: #F17949;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.header__small--yellow {
+    background-color: #FFB939;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.btn {
+    appearance: none;
+    border: none;
+    background-color: white;
+    border-radius: 100px;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700; 
+    font-size: 0.625rem;
+}
+
+.btn--header {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
 }
