@@ -11,6 +11,7 @@ body {
 
 .wrapper {
     max-width: 62.5rem;
+    margin: auto;
 }
 
 h1 {
@@ -106,3 +107,123 @@ h1, h2, h3, h4 {
     margin-top: 2rem;
     margin-bottom: 5rem;
 }
+
+.navbar {
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 2rem; /*smidigare sätt att lösa det på?*/
+}
+
+.navbar a {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.4) ;
+    padding: 2rem; /*smidigare sätt att lösa det på?*/
+}
+
+.navbar a:active {
+    color: black;
+}
+
+.content__intro {
+    background-color: #A9A19E;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 6rem;
+}
+
+.content__intro__left {
+    width: 40%; 
+    /*display: flex; kan vi lösa det med align-self stretch eller flexbox?*/
+}
+
+.content__intro__left h1 {
+    margin: 0;
+}
+
+.btn--content {
+   margin-top: 2rem; /*lösa det med flexbox?*/
+}
+
+.content__intro__right {
+    width: 30%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.6)
+}
+
+.content__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.7rem;
+    transform: translateY(-50%);
+
+}
+.content__cards article { /*bättre med classnamn?*/
+    height: 500px;
+    width: 25%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.content__cards h2 {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.content__cards p {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+div {
+    height:300px;
+    width: 300px;
+    background-color: #C7DDEA;
+}
+
+.content__cards img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: bottom 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*.content__cards figure {
+    background-color:#C7DDEA;
+    width: 90%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.content__cards figure img {
+    overflow: hidden;
+}*/
