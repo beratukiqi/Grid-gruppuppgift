@@ -169,12 +169,10 @@ h1, h2, h3, h4 {
     justify-content: center;
     align-items: center;
     gap: 1.7rem;
-    transform: translateY(-50%);
-    z-index: 5;
-    
 
 }
 .content__cards article { /*bättre med classnamn?*/
+    transform: translateY(-50%);
     height: 300px;
     width: 256px;
     background-color: white;
@@ -251,7 +249,8 @@ h1, h2, h3, h4 {
     text-align: center;
     width: 40%;
     margin: auto;
-    transform: translateY(-30%);
+    margin-top: -5rem;
+    padding-bottom: 100px;
 }
 
 .content__about p {
@@ -259,6 +258,7 @@ h1, h2, h3, h4 {
     line-height: 1.25rem;
     font-weight: 500;
     color:rgba(0, 0, 0, 0.6);
+    margin: 0;
 }
 
 .content__about h1 {
@@ -266,4 +266,82 @@ h1, h2, h3, h4 {
 }
 
 
+/* GRID BOTTOM */
 
+.onboarding {
+    margin: 0;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.onboarding__item {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 40px;
+
+}
+
+.onboarding__item h1 {
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 2.8rem;
+}
+
+.onboarding__item h3 {
+    color: red;
+    align-self: flex-start;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.4);
+
+}
+
+.onboarding__item p {
+    margin-bottom: 6.875rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
+
+}
+
+.onboarding__item--white {
+    background-color: white;
+}
+
+.onboarding__item--grey {
+    background-color: #EBEBEB;
+}
+
+.onboarding__item--red {
+    background-color: #F17949;
+}
+.onboarding__item--blue {
+    background-color: #C7DDEA;
+}
+
+footer {
+    height: 40vh;
+    background-color: #777574;
+}
+
+.footer__nav {
+    background-color: #A9A19E; /* Hur alignar vi footer? Den overlappar.*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .625rem;
+
+}
+
+.footer__nav img {
+    margin: 0;
+}
+
+.footer__nav p {
+    margin: 0;
+}
