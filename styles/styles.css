@@ -101,6 +101,7 @@ h1, h2, h3, h4 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 700; 
     font-size: 0.625rem;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
 }
 
 .btn--header {
@@ -129,9 +130,13 @@ h1, h2, h3, h4 {
     color: black;
 }
 
+.content {
+    background-color: orange;
+}
+
 .content__intro {
     background-color: #A9A19E;
-    height: 40vh;
+    height: 600px;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -165,19 +170,21 @@ h1, h2, h3, h4 {
     align-items: center;
     gap: 1.7rem;
     transform: translateY(-50%);
+    z-index: 5;
+    
 
 }
 .content__cards article { /*bättre med classnamn?*/
-    height: 500px;
-    width: 25%;
+    height: 300px;
+    width: 256px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
-    padding: 1rem;
+    padding: 0.6rem;
     text-align: center;
 }
 
@@ -191,39 +198,72 @@ h1, h2, h3, h4 {
     color: rgba(0, 0, 0, 0.4);
     font-size: 0.7rem;
     font-weight: 700;
+    line-height: 1.125rem;
+    margin-top: 0;
 }
 
-div {
-    height:300px;
-    width: 300px;
+.content__cards div {
+    border-radius: 5px;
+    margin-top: -40px;
+}
+.content__cards__child {
+    height: 50%;
+    width: 100%;
     background-color: #C7DDEA;
 }
 
-.content__cards img {
-    height: 200px;
-    width: 200px;
+.content__cards__child img {
+    width: 35%;
+    height: 100%;
     object-fit: cover;
-    object-position: bottom 40%;
+    object-position: 0 10px;
+}
+
+.content__cards__adult {
+    height: 50%;
+    width: 100%;
+    background-color: #FAB131;
+}
+.content__cards__adult img {
+    width: 35%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 20px;
+}
+
+.content__cards__old {
+    height: 50%;
+    width: 100%;
+    background-color: #F17949;
+}
+
+.content__cards__old img {
+    width: 55%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 20px;
 }
 
 
 
 
-
-
-
-
-
-
-
-
-/*.content__cards figure {
-    background-color:#C7DDEA;
-    width: 90%;
-    height: 300px;
-    border-radius: 5px;
+.content__about {
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    transform: translateY(-30%);
 }
 
-.content__cards figure img {
-    overflow: hidden;
-}*/
+.content__about p {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    color:rgba(0, 0, 0, 0.6);
+}
+
+.content__about h1 {
+   margin: 0;
+}
+
+
+
