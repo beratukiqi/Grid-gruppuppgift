@@ -11,48 +11,42 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/styles.css" />
-    <title>Document</title>
+    <title>Home</title>
   </head>
 
   <body>
     <section class="wrapper">
       <header class="header">
-        <article class="header__large">
-          <h1>We've got you Covered.</h1>
-          <p>
-            Together we keep each other safe at home or at work. By paying a
-            tiny fee a day, you are fully insured all day long. You get it all
-            for as little as <span>$0.4 per pay.</span>
-          </p>
-          <button class="btn btn--header">Join now</button>
-        </article>
+        <section class="hero">
+          <article class="hero__large">
+            <h1>We've got you Covered.</h1>
+            <p>Together we keep each other safe at home or at work. By paying a
+              tiny fee a day, you are fully insured all day long. You get it all
+              for as little as <span>$0.4 per pay.</span>
+            </p>
+            <button class="btn btn--hero">Join now</button>
+          </article>
 
-        <article class="header__small header__small--orange">
-          <p>What do we have to offer?</p>
-          <h2>Learn more</h2>
-        </article>
+          <article class="hero__small hero__small--upper flex__center">
+            <p>What do we have to offer?</p>
+            <h2>Learn more</h2>
+          </article>
 
-        <article class="header__small header__small--yellow">
-          <p>What are you waiting for?</p>
-          <h2>Join today</h2>
-        </article>
+          <article class="hero__small hero__small--lower flex__center">
+            <p>What are you waiting for?</p>
+            <h2>Join today</h2>
+          </article>
+        </section>
+        
+        <nav> <!-- Innanför eller utanför header -->
+          <ul class="navbar">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Our offer</a></li>
+            <li><a href="#">Why us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
       </header>
-      <nav>
-        <ul class="navbar">
-          <li>
-            <a class="active" href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Our offer</a>
-          </li>
-          <li>
-            <a href="#">Why us</a>
-          </li>
-          <li>
-            <a href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
 
       <main>
         <section class="content">
@@ -74,8 +68,8 @@
             </article>
           </section>
 
-          <section class="content__cards">
-            <article>
+          <section class="content__cards flex__center">
+            <article class="flex__center">
               <div class="content__cards__child">
                 <img src="images//child.png" alt="" />
               </div>
@@ -87,11 +81,10 @@
                 tellus accumsan id.
               </p>
             </article>
-            <article class="content__card">
+            <article class="flex__center">
               <div class="content__cards__adult">
                 <img src="images/adult.png" alt="adult" />
               </div>
-              
               <h2>Just right</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -100,11 +93,10 @@
                 tellus accumsan id.
               </p>
             </article>
-            <article class="content__card">
+            <article class="flex__center">
               <div class="content__cards__old">
                 <img src="images/old.png" alt="Old" />
               </div>
-              
               <h2>Old fart</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -124,26 +116,25 @@
         </section>
 
         <section class="onboarding">
-          <aside class="onboarding__item onboarding__item--blue"><h1>How It works?</h1></aside>
-          <aside class="onboarding__item">
+          <aside class="onboarding__item onboarding__item--blue flex__center"><h1>How It works?</h1></aside>
+          <aside class="onboarding__item flex__center">
             <h3>01</h3>
             <p>Answer a few questions 
               about yourself</p>
           </aside>
-          
-          <aside class="onboarding__item onboarding__item--grey">
+          <aside class="onboarding__item onboarding__item--grey flex__center">
             <h3>02</h3>
             <p>Choose a plan. <br> Get a quote.</p>
           </aside >
-          <aside class="onboarding__item">
+          <aside class="onboarding__item flex__center">
             <h3>03</h3>
             <p>Answer some questions about your medical history.</p>
           </aside>
-          <aside class="onboarding__item onboarding__item--red">
+          <aside class="onboarding__item onboarding__item--red flex__center">
             <h3>04</h3>
             <p>Wait 90 sec to get approved.</p>
           </aside>
-          <aside class="onboarding__item">
+          <aside class="onboarding__item flex__center">
             <h3>05</h3>
             <p>Done!</p>
           </aside>
@@ -151,12 +142,12 @@
       </main>
 
       <footer>
-        <nav class="footer__nav">
+        <nav class="footer__nav flex__center">
           <img src="/images/chevrons-up.svg" alt="Up arrow" />
           <p>Take me up again!</p>
         </nav>
-      
       </footer>
-    </section>
+
+    </section> <!-- End of wrapper -->
   </body>
 </html>

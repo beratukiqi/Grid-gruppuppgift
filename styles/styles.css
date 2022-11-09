@@ -3,10 +3,17 @@
 }
 
 body {
-    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
     width: 100vw;
     height: 100vh;
-    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+}
+
+.flex__center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .wrapper {
@@ -16,6 +23,7 @@ body {
 
 h1 {
     font-size: 2.8rem;
+    margin: 0;
 }
 
 h2 {
@@ -28,126 +36,144 @@ h1, h2, h3, h4 {
     font-weight: 900;
 }
 
-.header {
-    max-height: 50vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+p {
+    margin: 0;
 }
 
-.header__large {
+/* Styling for Header*/
+
+.header {
+    max-height: 34.375rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero { 
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.hero__large {
     background-color: #C7DDEA;
     background-image: url("../images/family.png");
-    background-size: 50%;
+    background-size: 45%;
     background-repeat: no-repeat;
     background-position: bottom right 17px;
-    grid-column: 1;
-    grid-row: 1 / span 2;
-    padding: 3rem 6.5rem;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    padding: 3rem 6.5rem;
 }
 
-.header__large h1 {
+.hero__large h1 {
     color: black;
-    margin: 0;
 }
-.header__large p {
-    font-size: 0.87rem;
+.hero__large p {
+    font-size: .87rem;
     font-weight: 500;
 }
 
-.header span {
+.hero span {
     color: white;
 }
 
-.header__small {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
-.header__small h2, .header__small p {
+.hero__small h2, .hero__small p {
     margin: 1px;
 }
 
-.header__small p {
-    font-size: 0.68rem;
+.hero__small p {
+    font-size: .68rem;
     font-weight: 700;
 }
 
-.header__small--orange {
+.hero__small--upper {
     background-color: #F17949;
     grid-column: 2;
     grid-row: 1;
 }
 
-.header__small--yellow {
+.hero__small--lower {
     background-color: #FFB939;
     grid-column: 2;
     grid-row: 2;
 }
 
+/* Styling of Buttons */
+
 .btn {
+    cursor: pointer;
     appearance: none;
     border: none;
     background-color: white;
     border-radius: 100px;
-    text-transform: uppercase;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
     padding: 1rem 2rem;
+    text-transform: uppercase;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 700; 
-    font-size: 0.625rem;
-    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+    font-size: .625rem;
 }
 
-.btn--header {
+.btn--hero {
     margin-top: 2rem;
     margin-bottom: 5rem;
 }
 
+.btn--content {
+    align-self: flex-start; 
+}
+
+.btn--contact {
+    align-self: flex-end;
+}
+
+/* Styling of Nav-bar */
+
 .navbar {
+    list-style-type: none;
     background-color: #E5E5E5;
     display: flex;
     justify-content: space-around;
-    list-style-type: none;
     margin: 0;
     padding: 2rem; 
 }
 
 .navbar a {
-    font-size: 0.75rem;
+    font-size: .75rem;
     font-weight: 600;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.4) ;
-    margin: 2rem; /*smidigare sätt att lösa det på?*/
+    padding: 2rem;
 }
 
-.navbar a:active {
-    color: black;
-}
-
-/* hur får man funka active color */
-
-.navbar .active {
+.navbar .active, .navbar a:active {
     color: black;
 }
 
 
-
-
+/* Styling of Main */
 
 .content {
     background-color: orange;
 }
 
+.content p {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.375rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* Styling of Intro */
+
 .content__intro {
     background-color: #A9A19E;
-    height: 600px;
+    height: 37.5rem;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -155,46 +181,33 @@ h1, h2, h3, h4 {
 }
 
 .content__intro__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15rem;
     width: 40%; 
-    /*display: flex; kan vi lösa det med align-self stretch eller flexbox?*/
-}
-
-.content__intro__left h1 {
-    margin: 0;
-}
-
-.btn--content {
-   margin-top: 2rem; /*lösa det med flexbox?*/
 }
 
 .content__intro__right {
     width: 30%;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 24px;
-    color: rgba(0, 0, 0, 0.6)
 }
+
+/* Styling of Cards */
 
 .content__cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
     gap: 1.7rem;
-
 }
-.content__cards article { /*bättre med classnamn?*/
+
+.content__cards article {
     transform: translateY(-50%);
-    height: 300px;
-    width: 256px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: top;
-    align-items: center;
-    padding: 0.6rem;
+    height: 18.75rem;
+    width: 16rem;
     text-align: center;
+    padding: .6rem;
 }
 
 .content__cards h2 {
@@ -202,10 +215,10 @@ h1, h2, h3, h4 {
     font-size: 1rem;
     font-weight: 700;
 }
-
-.content__cards p {
+ 
+.content .content__cards p {
     color: rgba(0, 0, 0, 0.4);
-    font-size: 0.7rem;
+    font-size: .7rem;
     font-weight: 700;
     line-height: 1.125rem;
     margin-top: 0;
@@ -214,10 +227,11 @@ h1, h2, h3, h4 {
 .content__cards div {
     border-radius: 5px;
     margin-top: -40px;
-}
-.content__cards__child {
     height: 50%;
     width: 100%;
+}
+
+.content__cards__child {
     background-color: #C7DDEA;
 }
 
@@ -229,8 +243,6 @@ h1, h2, h3, h4 {
 }
 
 .content__cards__adult {
-    height: 50%;
-    width: 100%;
     background-color: #FAB131;
 }
 .content__cards__adult img {
@@ -241,8 +253,6 @@ h1, h2, h3, h4 {
 }
 
 .content__cards__old {
-    height: 50%;
-    width: 100%;
     background-color: #F17949;
 }
 
@@ -253,8 +263,7 @@ h1, h2, h3, h4 {
     object-position: 0 20px;
 }
 
-
-
+/* Styling of About section */
 
 .content__about {
     text-align: center;
@@ -264,41 +273,18 @@ h1, h2, h3, h4 {
     padding-bottom: 100px;
 }
 
-.content__about p {
-    font-size: .875rem;
-    line-height: 1.25rem;
-    font-weight: 500;
-    color:rgba(0, 0, 0, 0.6);
-    margin: 0;
-}
-
-.content__about h1 {
-   margin: 0;
-}
-
-
-/* GRID BOTTOM */
+/* Styling of Onboarding */
 
 .onboarding {
-    margin: 0;
-    height: 50%;
-    grid-auto-rows: 21.25rem;
     display: grid;
-    width: 1000px;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: repeat(2, 1fr); */
+    grid-auto-rows: 21.25rem;
 }
 
 .onboarding__item {
-
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    align-items: center;
     text-align: center;
     padding: 0px 40px;
     position: relative;
-
 }
 
 .onboarding__item h1 {
@@ -307,29 +293,20 @@ h1, h2, h3, h4 {
 }
 
 .onboarding__item h3 {
-    color: red;
-    /* align-self: flex-start; */
-    top: 1rem;
-    left: 1rem;
-    margin: 0;
+    color: rgba(0, 0, 0, 0.4);
     font-size: 2.2rem;
     font-weight: 900;
-    color: rgba(0, 0, 0, 0.4);
+    margin: 0;
     position: absolute;
-
+    top: 1rem;
+    left: 1rem;
 }
 
 .onboarding__item p {
-    /* margin-bottom: 6.875rem; */
     font-size: 1rem;
     line-height: 1.25rem;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.7);
-
-}
-
-.onboarding__item--white {
-    background-color: white;
 }
 
 .onboarding__item--grey {
@@ -339,131 +316,98 @@ h1, h2, h3, h4 {
 .onboarding__item--red {
     background-color: #F17949;
 }
+
 .onboarding__item--blue {
     background-color: #C7DDEA;
 }
 
+/* Styling of footer */
+
 footer {
-    height: 40vh;
+    height: 25.625rem;
     background-color: #777574;
 }
 
 .footer__nav {
-    background-color: #A9A19E; /* Hur alignar vi footer? Den overlappar.*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #A9A19E;
     padding: .625rem;
-
 }
 
-.footer__nav img {
-    margin: 0;
+/* Styling of Header Contact */
+
+.header__contact {
+    height: 410px;
 }
 
-.footer__nav p {
-    margin: 0;
-}
-
-
-
-/* contact */
-
-
-.contact_header {
+.header__contact__hero {
+    height: 80%;
     background-color: #C7DDEA;
-    height: 21.25rem;
     background-image: url("../images/man-and-child.png");
     background-repeat: no-repeat;
     background-position: bottom right 7.1875rem ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    
-    
 }
 
-/* vrf det einte går att centera h1 */
-
-.contact_header h1 {
+.header__contact__hero h1 {
     color: black;
 }
 
-.contact_article {
-    height: 34rem;
-    background-color: #A9A19E;
-    
-}
+/* Styling of Main Contact */
 
-.contact_form {
+.contact__form {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
     width: 40%;
 }
 
-.contact_article {
+.contact {
+    height: 34.375rem;
     display: flex;
-    color: white;
     justify-content: space-around;
     align-items: center;
+    color: white;
+    background-color: #A9A19E;
     padding: 6.25rem;
-    
-
 }
 
-.contact_article h1 {
+.contact h1 {
     width: 40%;
     align-self: flex-start;
 }
 
-.contact_form aside input, .contact_form aside textarea {
+.input {
     border-radius: .125rem;
-    font-size: .875rem;
-    padding: .5rem;
     border-style: none;
-    width: 100%;
-    margin-top: .3125rem;
+    font-size: .875rem;
     font-weight: 43.75rem;
+    width: 100%;
+    padding: .5rem;
+    margin-top: .3125rem;
+    margin-bottom: 1.25rem;
 }
 
-.btn--contact {
-    align-self: flex-end;
-}
-
-
-.contact_map {
+.contact__map {
     color: white;
     background-image: url("../images/map-contact.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 25.4375rem;
+    height: 25rem;
     position: relative;
-    
 }
 
-.contact_map article {
+.contact__map article {
     background-color: #FAB131;
-    padding: 10px;
-    width: 20.1875rem;
-    height: 206px;
+    position: absolute;
     left: 100px;
     top: 45px;
-    position: absolute;
+    width: 20.1875rem;
+    height: 12.875rem;
+    padding: 10px;
     margin: 0;
 }
 
-
-.contact_map h1 {
-    margin: 0;
-}
-
-.contact_footer {
+.contact__footer {
     height: 21.25rem;
     background-color: #777574;
 }
