@@ -130,6 +130,13 @@ h1, h2, h3, h4 {
     color: black;
 }
 
+/* hur får man funka active color */
+
+
+
+
+
+
 .content {
     background-color: orange;
 }
@@ -344,4 +351,72 @@ footer {
 
 .footer__nav p {
     margin: 0;
+}
+
+
+
+/* contact */
+
+
+.contact_header {
+    background-color: #C7DDEA;
+    height: 21.25rem;
+    background-image: url("../images/man-and-child.png");
+    background-repeat: no-repeat;
+    background-position: bottom right 7.1875rem ;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+
+/* vrf det einte går att centera h1 */
+
+.contact_header h1 {
+    color: black;
+}
+
+.contact_article {
+    height: 34rem;
+    background-color: #A9A19E;
+    
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 40%;
+}
+
+.contact_article {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6.25rem;
+    
+
+}
+
+.contact_article h1 {
+    width: 40%;
+    align-self: flex-start;
+}
+
+.contact_form aside input, .contact_form aside textarea {
+    border-radius: .125rem;
+    font-size: .875rem;
+    border-style: none;
+    width: 100%;
+    margin-top: .3125rem;
+    font-weight: 43.75rem;
+}
+
+.btn--contact {
+    align-self: flex-end;
 }
