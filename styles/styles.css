@@ -115,7 +115,7 @@ h1, h2, h3, h4 {
     justify-content: space-around;
     list-style-type: none;
     margin: 0;
-    padding: 2rem; /*smidigare sätt att lösa det på?*/
+    padding: 2rem; 
 }
 
 .navbar a {
@@ -123,7 +123,7 @@ h1, h2, h3, h4 {
     font-weight: 600;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.4) ;
-    padding: 2rem; /*smidigare sätt att lösa det på?*/
+    margin: 2rem; /*smidigare sätt att lösa det på?*/
 }
 
 .navbar a:active {
@@ -132,6 +132,9 @@ h1, h2, h3, h4 {
 
 /* hur får man funka active color */
 
+.navbar .active {
+    color: black;
+}
 
 
 
@@ -364,8 +367,6 @@ footer {
     background-image: url("../images/man-and-child.png");
     background-repeat: no-repeat;
     background-position: bottom right 7.1875rem ;
-    text-align: center;
-    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
