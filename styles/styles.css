@@ -43,7 +43,7 @@ p {
 /* Styling for Header*/
 
 .header {
-    max-height: 34.375rem;
+    max-height: 34.4rem;
     display: flex;
     flex-direction: column;
 }
@@ -59,7 +59,7 @@ p {
     background-image: url("../images/family.png");
     background-size: 45%;
     background-repeat: no-repeat;
-    background-position: bottom right 17px;
+    background-position: bottom right 1rem;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -73,7 +73,7 @@ p {
     color: black;
 }
 .hero__large p {
-    font-size: .87rem;
+    font-size: .9rem;
     font-weight: 500;
 }
 
@@ -87,7 +87,7 @@ p {
 }
 
 .hero__small p {
-    font-size: .68rem;
+    font-size: .7rem;
     font-weight: 700;
 }
 
@@ -110,13 +110,13 @@ p {
     appearance: none;
     border: none;
     background-color: white;
-    border-radius: 100px;
+    border-radius: 6.25rem;
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
     padding: 1rem 2rem;
     text-transform: uppercase;
     font-family: 'Fira Sans', sans-serif;
     font-weight: 700; 
-    font-size: .625rem;
+    font-size: .6rem;
 }
 
 .btn--hero {
@@ -144,7 +144,7 @@ p {
 }
 
 .navbar a {
-    font-size: .75rem;
+    font-size: .8rem;
     font-weight: 600;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.4) ;
@@ -163,9 +163,9 @@ p {
 }
 
 .content p {
-    font-size: 0.875rem;
+    font-size: 0.9rem;
     font-weight: 500;
-    line-height: 1.375rem;
+    line-height: 1.4rem;
     color: rgba(0, 0, 0, 0.6);
 }
 
@@ -173,7 +173,7 @@ p {
 
 .content__intro {
     background-color: #A9A19E;
-    height: 37.5rem;
+    height: 38rem;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -204,7 +204,7 @@ p {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-    height: 18.75rem;
+    height: 18.8rem;
     width: 16rem;
     text-align: center;
     padding: .6rem;
@@ -220,13 +220,13 @@ p {
     color: rgba(0, 0, 0, 0.4);
     font-size: .7rem;
     font-weight: 700;
-    line-height: 1.125rem;
+    line-height: 1.1rem;
     margin-top: 0;
 }
 
 .content__cards div {
     border-radius: 5px;
-    margin-top: -40px;
+    margin-top: -2.5rem;
     height: 50%;
     width: 100%;
 }
@@ -270,7 +270,7 @@ p {
     width: 40%;
     margin: auto;
     margin-top: -5rem;
-    padding-bottom: 100px;
+    padding-bottom: 6.2rem;
 }
 
 /* Styling of Onboarding */
@@ -278,7 +278,7 @@ p {
 .onboarding {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 21.25rem;
+    grid-auto-rows: 21.3rem;
 }
 
 .onboarding__item {
@@ -304,7 +304,7 @@ p {
 
 .onboarding__item p {
     font-size: 1rem;
-    line-height: 1.25rem;
+    line-height: 1.3rem;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.7);
 }
@@ -324,19 +324,19 @@ p {
 /* Styling of footer */
 
 footer {
-    height: 25.625rem;
+    height: 25.6rem;
     background-color: #777574;
 }
 
 .footer__nav {
     background-color: #A9A19E;
-    padding: .625rem;
+    padding: .6rem;
 }
 
 /* Styling of Header Contact */
 
 .header__contact {
-    height: 410px;
+    height: 25.6rem;
 }
 
 .header__contact__hero {
@@ -344,7 +344,7 @@ footer {
     background-color: #C7DDEA;
     background-image: url("../images/man-and-child.png");
     background-repeat: no-repeat;
-    background-position: bottom right 7.1875rem ;
+    background-position: bottom right 7.2rem ;
 }
 
 .header__contact__hero h1 {
@@ -356,18 +356,18 @@ footer {
 .contact__form {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1.3rem;
     width: 40%;
 }
 
 .contact {
-    height: 34.375rem;
+    height: 34.4rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: white;
     background-color: #A9A19E;
-    padding: 6.25rem;
+    padding: 6.3rem;
 }
 
 .contact h1 {
@@ -376,14 +376,14 @@ footer {
 }
 
 .input {
-    border-radius: .125rem;
+    border-radius: 2px;
     border-style: none;
-    font-size: .875rem;
-    font-weight: 43.75rem;
+    font-size: .9rem;
+    font-weight: 43.8rem;
     width: 100%;
     padding: .5rem;
-    margin-top: .3125rem;
-    margin-bottom: 1.25rem;
+    margin-top: 5px;
+    margin-bottom: 1.3rem;
 }
 
 .contact__map {
@@ -399,15 +399,15 @@ footer {
 .contact__map article {
     background-color: #FAB131;
     position: absolute;
-    left: 100px;
-    top: 45px;
-    width: 20.1875rem;
-    height: 12.875rem;
+    left: 6.3rem;
+    top: 2.8rem;
+    width: 20.2rem;
+    height: 12.9rem;
     padding: 10px;
     margin: 0;
 }
 
 .contact__footer {
-    height: 21.25rem;
+    height: 21.3rem;
     background-color: #777574;
 }
